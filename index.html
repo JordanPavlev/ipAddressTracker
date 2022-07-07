@@ -3,32 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <title>IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  IP Address Tracker
+<div class="app-container">
+  <div class="input-container">
+    <h1 class="title">Enter your ip address:</h1>
 
-  Search for any IP address or domain
+      <form class="form-elements">
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+      <input type="text" class="form-control" name="" placeholder="Search for any ip address" id="ip_address">
+
+      <button id="search" class="btn btn-black">
+        <img src="./images/icon-arrow.svg" alt="search" width="12px" height="12px">
+      </button>
+
+    </form>
+  </div>
+  <div class="results-container">
+    <div class="display-container">
+      <div class="info-block block-seperator">
+        <h4 class="muted-title">IP Address</h4>
+        <span class="results" id="current_ip">192.212.174.101</span>
+      </div>
+      <div class="info-block block-seperator">
+        <h4 class="muted-title">Location</h4>
+        <span class="results" id="current_town">Cape Town, SA 7530</span>
+      </div>
+      <div class="info-block block-seperator">
+        <h4 class="muted-title">Timezone</h4>
+        <span class="results" id="current_zone">UTC +2:00</span>
+      </div>
+      <div class="info-block block-seperator">
+        <h4 class="muted-title">ISP</h4>
+        <span class="results" id="current_isp">Rain</span>
+      </div>
+    </div>
+  </div>
   
+  <div style="height: 122px;" class="map-container" id="map">
+
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/jordanpavlev">Jordan Pavlev</a>.
   </div>
+
+ 
+</div>
+
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <script src="./main.js"></script>
 </body>
 </html>
