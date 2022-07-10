@@ -5,25 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
   <title>IP Address Tracker</title>
 
 </head>
 <body>
 
 <div class="app-container">
-  <div class="input-container">
-    <h1 class="title">Enter your ip address:</h1>
+  <header class="header-block header-background">
+    <div class="logo-text">
+      <a href="./index.html">
+        <img src="./images/technology.png" class="header-logo" alt="" srcset="">
+      </a>
+      <div class="text">
+        <h2><span>IP</span>Tracker</h2>
+        <h3>Track the ip you want</h3>
+      </div>
+    </div>
+    <div class="search">
+      <h2 class="search__text">Submit your site</h2>
+      <a href="#form" class="fa-solid fa-magnifying-glass-location"></a>
+      <a href="#" class="fa-solid fa-bars"></a>
+    </div>
+  </header>
 
-      <form class="form-elements">
+  <!--Main starts here-->
 
-      <input type="text" class="form-control" name="" placeholder="Search for any ip address" id="ip_address">
+  <div class="main-container">
 
-      <button id="search_btn" class="btn btn-black">
-        <img src="./images/icon-arrow.svg" alt="search" width="12px" height="12px">
-      </button>
+  <div class="map-result">
+  <div id="display_map"  class="map-container">
 
-    </form>
   </div>
   <div class="results-container">
     <div class="display-container">
@@ -45,10 +63,31 @@
       </div>
     </div>
   </div>
-  
-  <div id="display_map"  class="map-container">
+</div>
+<div class="input">
+  <div class="input-container">
+    <div class="form-container">
+      <form id="form" class="form-elements">
+        <legend>Enter the ip you want to find</legend>
+      <input type="text" class="form-control" name="" placeholder="Search for any ip address" id="ip_address">
 
+      <button id="search_btn" class="btn btn-black">
+        <img src="./images/icon-arrow.svg" alt="search" width="12px" height="12px">
+      </button>
+
+    </form>
   </div>
+  
+  <div class="author-container">
+    <h3><a href="./index.html">Jordan Pavlev - IP Tracker</a></h3>
+    <h4><span>by </span><a href="#">Jordan Pavlev</a></h4>
+  </div>
+  </div>
+</div>
+
+  
+ 
+</div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -1,91 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300&display=swap');
+
 
 
 body {
-    box-sizing: inherit;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #DCDCDC;
     font-size: 18px;
 }
+
+header {
+    max-height: 17vh;
+    background-color: #004C45;
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text {
+    display: flex;
+}
+
+.text {
+    line-height: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.text span {
+    font-weight: 900;
+    color: #4effe6;
+}
+
+.text h3 {
+    font-weight: 200;
+}
+
+.header-logo {
+    width: 5rem;
+}
+
+.search {
+    display: flex;
+}
+
+.search__text {
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.search a {
+    padding: 2rem;
+    border-left: 1px solid;
+    text-decoration: none;
+    color: #4effe6;
+}
+
 
 h1.title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.map-result {
+    width: 60%;
+}
+
+.input {
+    width: 40%;
+    background: url(./images/cool-background\(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+    margin-left: 12px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container {
-    background: url(./images/pattern-bg.png);
-    text-align: center;
-    padding: 20px;
-    min-height: 200px;
+    display: grid;
+    grid-template-rows: 10rem 1rem;
+    
 }
 
+.input h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 16px;
+    font-family: 'Press Start 2P', cursive;
+    color: #4d5256;
+}
+.input h3 a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: #4d5256;
+}
+
+
+
+.input h4, h4 span {
+    font-size: 1.5rem;
+    color: #4d5256;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.input h4 a {
+    text-decoration: none;
+    color: #4d5256;
+}
+
+.input a:hover {
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+.map-container {
+    width:100%;
+    border: 1px solid #4d5256;
+    min-height: 70vh;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+
+
+
 .form-elements {
-    position: relative;
-    max-width: 380px;
-    margin: auto;
+    text-align: center;
 }
 
 .form-control {
     padding: 15px;
     min-width: 300px;
-    border-radius: 10px;
     border: none;
+    border: 1px solid #4d5256;
 }
 
 .btn-black {
     background-color: black;
     padding: 15px;
     border: none;
-    border-radius: 0 20px 10px 0 ;
-    position: absolute;
-    right: 0;
+    border-radius: 0 10px 10px 0 ;
     cursor: pointer;
 }
 
 .display-container {
     display: flex;
-    align-items: center;
+    color: red;
+    height: 18vh;
+    padding: 12px;
     justify-content: center;
-    margin-top: -60px;
-    background-color: white;    
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 8px black;
-    min-height: 130px;
-    position: relative;
-    z-index: 1000;
-    padding: 20px;
+    background-color: #9068be;    
 }
 
-.info-block {
-    border-right: 1px solid;
+.info-block {   
+    color: white;
     min-height: 60px;
+    margin: 0 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 15px;
-}
-
-.info-block:last-child {
-    border-right: none;
+    padding: 0 22px;
 }
 
 .muted-title {
-    font-size: 13px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
 span.results {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
-    color: black;
+    color: #fff;
+    padding: 6px;
+    letter-spacing: 2px;
+    background-color: #333333;
 }
 
-.map-container {
-    width: 100%;
-    margin-top: -70px;
-    min-height: 120vh;
+.attribution {
+    text-align: end;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #4d5256;
+    font-size: 12px;
 }

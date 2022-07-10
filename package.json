@@ -1,0 +1,23 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "Track any ip, which is available on the surface.",
+  "main": "index.html",
+  "scripts": {
+    "test": "click"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanPavlev/ip-address-tracker-master.git"
+  },
+  "keywords": [
+    "ip",
+    "iptracker"
+  ],
+  "author": "Jordan Pavlev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanPavlev/ip-address-tracker-master/issues"
+  },
+  "homepage": "https://jordanpavlev.github.io/ipAddressTracker/"
+}
