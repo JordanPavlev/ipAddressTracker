@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    max-height: 17vh;
+    max-height: 17vh;   
     background-color: #004C45;
     width: 100%;
     font-family: 'Saira', sans-serif;
@@ -17,6 +17,7 @@ header {
 .header-block {
     display: flex;
     justify-content: space-between;
+    color:#fff; 
 }
 
 .logo-text {
@@ -29,8 +30,9 @@ header {
     align-self: center;
 }
 
-.text span {
-    font-weight: 900;
+.text h2 span {
+    font-size: 120%;
+    font-weight: 700;
     color: #4effe6;
 }
 
@@ -48,14 +50,20 @@ header {
 
 .search__text {
     text-align: center;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 .search a {
     padding: 2rem;
-    border-left: 1px solid;
+    font-size: 1.4rem;
+    border-left: 1px solid #4effe6;
+    
     text-decoration: none;
     color: #4effe6;
+}
+
+.search a:hover {
+    color: #31a293;
 }
 
 
@@ -76,7 +84,7 @@ h1.title {
 
 .input {
     width: 40%;
-    background: url(./images/cool-background\(1\).png);
+    background-image: url(./images/cool-background\(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Saira', sans-serif;
@@ -88,20 +96,19 @@ h1.title {
 }
 
 .input-container {
-    display: grid;
-    grid-template-rows: 10rem 1rem;
+    
     
 }
 
 .input h3 {
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 16px;
     font-family: 'Press Start 2P', cursive;
     color: #4d5256;
 }
 .input h3 a {
     text-decoration: none;
+    
     font-family: 'Press Start 2P', cursive;
     color: #4d5256;
 }
@@ -159,14 +166,15 @@ h1.title {
 .display-container {
     display: flex;
     color: red;
-    height: 18vh;
+    height: 26vh;
     padding: 12px;
+    font-family: 'Saira', sans-serif;
     justify-content: center;
-    background-color: #9068be;    
+    background-image: url(./images/cool-background\(1\).png);
 }
 
 .info-block {   
-    color: white;
+    color: rgb(128, 124, 124);
     min-height: 60px;
     margin: 0 12px;
     display: flex;
@@ -193,6 +201,7 @@ span.results {
 .attribution {
     text-align: end;
     font-size: 12px;
+    margin-top: 1rem;
     font-family: 'Press Start 2P', cursive;
 }
 
